@@ -1,0 +1,22 @@
+自动拦截后台自动启动的应用！
+明显改善能耗！
+(由于是个人作品，测试并不是很完善，所以自己认为会有Bug，希望大家能够帮我改进，因为还有部分程序比较“顽固”，所以接下来准备做Root功能，可能要花些时间，敬请期待吧！)
+希望大家多多支持！
+
+
+It can auto-Block the applications that auto-launch in the background!
+Significant improvement in energy consumption!
+(Because it is the individual works, the test is not perfect, I hope it can improved.Because part of the apps so "stubborn", so the next prepared is to Root,it may take some time. so stay tuned!)
+Hope you can enjoy!
+My E-mail: xxj_2007@foxmail.com
+
+Make Our Android In Hand!
+
+版本1.2.3:1.修复对话框图标显示不正确
+1.2.4：修复G11，G13等几款机型适配问题
+1.2.5：
+
+v1.3:
+1.优化算法，大大节省系统资源；
+2.应大家要求，下版会有个无广告版；
+3.看有很多用户不会用，其实大家只要打开任务拦截器后，它就会自动帮您拦截了，不用大家太多操作，只要有软件想自启动，它就会弹出对话框让您选择操作的！

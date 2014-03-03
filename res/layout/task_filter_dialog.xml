@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/tf_dialog_app_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tf_dialog_title"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@color/green" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/tf_dialog_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:text="app_name"
+            android:textSize="20sp" />
+        
+		<!-- 显示广告的 Layout -->
+    	
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:text="@string/tf_dialog_content"
+            android:textSize="17sp" android:layout_below="@id/tf_dialog_appname"/>
+
+        <CheckBox
+            android:id="@+id/tf_dialog_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_marginLeft="10dip"
+            android:checked="true"
+            android:text="@string/tf_dialog_save"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tf_dialog_clocker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tf_dialog_remember"
+            android:layout_alignBottom="@+id/tf_dialog_remember"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:text="TextView"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/bt_tf_dialog_allow"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:text="@string/tf_dialog_allow" />
+
+        <Button
+            android:id="@+id/bt_tf_dialog_deny"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:text="@string/tf_dialog_deny" />
+    </LinearLayout>
+
+</LinearLayout>

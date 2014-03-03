@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">任务拦截器</string>
+	<string name="tf_dialog_content">
+	    正在启动，是否允许其启动。
+	  (默认允许但不记住)
+	    </string>
+	<string name="tf_dialog_title">自启动授权申请</string>
+	<string name="tf_dialog_allow">允许</string>
+	<string name="tf_dialog_deny">拒绝</string>
+	<string name="tf_dialog_save">记住</string>
+	<string name="tf_main_settings">设置</string>
+	<string name="tf_settings_bootstart">开机启动</string>
+	<string name="tf_settings_startservice">开启任务拦截器</string>
+	<string name="tf_settings_include_sys">拦截系统程序</string>
+	<string name="tf_main_pro">程序</string>
+	<string name="tf_main_about">关于</string>
+	<string name="tf_about_version">当前版本:</string>
+	<string name="tf_about_mail">E-mail: xxj_2007@foxmail.com</string>
+	<string name="tf_about_qq">QQ群:</string>
+	<string name="tf_cm_title">操作</string>
+	<string name="tf_cm_allow">允许</string>
+	<string name="tf_cm_deny">拒绝</string>
+	<string name="tf_cm_delete">忘记</string>
+	<string name="tf_menu_feedback">反馈</string>
+	<string name="tf_menu_update">更新</string>
+	<string name="tf_menu_about">关于</string>
+	<string name="tf_menu_share">分享</string>
+	<string name="tf_menu_quit">退出</string>
+	<string name="tf_menu_exit_content">您确定要退出任务拦截器吗?</string>
+	<string name="tf_menu_exit_title">提示</string>
+	<string name="tf_sys_sure">确定</string>
+	<string name="tf_sys_cancel">取消</string>
+	<string name="tf_menu_share_title">分享到 ...</string>
+	<string name="tf_menu_share_content">Hi~我正在使用 \"任务拦截器\", it\'s so cool! Come with me!</string>
+	<string name="tf_menu_quit_content">请再按一次退出任务拦截器!</string>
+</resources>

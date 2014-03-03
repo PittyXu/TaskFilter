@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" android:layout_marginBottom="48dip">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="4dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tf_main_title_font"
+                    android:text="@string/tf_main_settings" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/green" />
+
+                <CheckBox
+                    android:id="@+id/tf_settings_bootstart"
+                    style="@style/tf_main_settings_list"
+                    android:checked="true"
+                    android:text="@string/tf_settings_bootstart" />
+
+                <CheckBox
+                    android:id="@+id/tf_settings_startservice"
+                    style="@style/tf_main_settings_list"
+                    android:checked="true"
+                    android:text="@string/tf_settings_startservice" />
+
+                <CheckBox
+                    android:id="@+id/tf_settings_include_sys"
+                    style="@style/tf_main_settings_list"
+                    android:checked="true"
+                    android:text="@string/tf_settings_include_sys" />
+
+                <TextView
+                    android:id="@+id/tf_main_divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/tf_main_pro"
+                    style="@style/tf_main_title_font"
+                    android:text="@string/tf_main_pro" />
+
+                <TextView
+                    android:id="@+id/tf_main_divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/tf_settings_allow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="4dip"
+                    android:paddingLeft="11dip"
+                    android:text="@string/tf_dialog_allow"
+                    android:textSize="18sp" />
+
+                <ListView
+                    android:id="@+id/tf_settings_allow_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:dividerHeight="0.5dip"
+                    android:fadingEdge="none" >
+                </ListView>
+
+                <TextView
+                    android:id="@+id/tf_settings_deny"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_marginTop="4dip"
+                    android:paddingLeft="11dip"
+                    android:text="@string/tf_cm_deny"
+                    android:textSize="18sp" />
+
+                <ListView
+                    android:id="@+id/tf_settings_deny_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:dividerHeight="0.5dip"
+                    android:fadingEdge="none" >
+                </ListView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/green"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- 显示广告的 Layout -->
+
+    <com.admogo.AdMogoLayout
+        android:id="@+id/admogo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

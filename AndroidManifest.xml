@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.task.filter" android:versionCode="5" android:versionName="1.2.2" >
+    <uses-sdk android:minSdkVersion="7" />
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" >
+        <activity android:label="@string/app_name" android:name=".TaskFilterActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TaskFilterDialogActivity" android:theme="@android:style/Theme.Dialog" android:process=":dailog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+       	<service android:enabled="true" android:name=".service.TaskFilterService"
+           android:process=":remote">
+       	</service>
+       
+		<receiver android:name=".receiver.BootReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
+		
+		<activity android:name="com.feedback.ui.SendFeedback" android:windowSoftInputMode="adjustResize" />
+		<activity android:name="com.feedback.ui.FeedbackConversations" />
+		<activity android:name="com.feedback.ui.FeedbackConversation" android:configChanges="keyboard" />
+		
+		<!-- 声明多盟的Activity -->
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent" />
+		<!-- 声明AdMob的Activity -->
+        <activity android:configChanges="orientation|keyboard|keyboardHidden" android:name="com.google.ads.AdActivity" />
+        <activity android:name="com.kuguo.openads.AdsOfferListActivity"/>
+        <activity android:excludeFromRecents="true" android:name="com.kuguo.pushads.PushAdsActivity" android:theme="@android:style/Theme.Dialog" >
+            <intent-filter >
+                <action android:name="com.android.action_PUSHADSACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.kuguo.pushads.AdsService" />
+        <receiver android:name="com.kuguo.pushads.AdsReceiver" >
+            <intent-filter >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        
+        <meta-data android:name="ADMOGO_KEY" android:value="4ce3d0fde5fc4cccb4fae4aa986fab9b" />  
+     	<meta-data android:name="UMENG_APPKEY" android:value="4f40a8815270155633000001" />  
+     	<meta-data android:name="UMENG_CHANNEL" android:value="GFAN" />
+     	<meta-data android:name="cooId" android:value="c432b55bc2e54b93bad46368faead2ca"/>
+		<meta-data android:name="channelId" android:value="GFAN"/>
+    </application>
+</manifest>
